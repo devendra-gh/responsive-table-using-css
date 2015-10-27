@@ -26,6 +26,28 @@ When the screen is below a certain threshold, set the table elements to display:
    }
 ```
 #####So the following basic Table structure is:
+```HTML
+<div class="table-responsive">
+   <table>
+       <thead>
+       <tr>
+           <th>User ID</th>
+           <th>First Name</th>
+           <th>Last Name</th>
+           <th>Username</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+           <td data-title="User ID">0001</td>
+           <td data-title="First Name">Maria</td>
+           <td data-title="Last Name">Anders</td>
+           <td data-title="Username">@maria</td>
+       </tr>
+   </tbody>
+</table>
+</div>
+```
 
 <div class="table-responsive">
    <table>
@@ -49,8 +71,9 @@ When the screen is below a certain threshold, set the table elements to display:
 </div>
 
 
-#####And following CSS styles media query is:
+##### And following CSS styles media query is:
 
+```HTML
 table {
    width: 100%;
    text-align: left;
@@ -105,8 +128,10 @@ table {
        font-weight: bold;
    }
 }
+```
 
-Hope this will help!!
+######Complete HTML and CSS file
+
 
 ```HTML
 <!DOCTYPE html>
@@ -228,4 +253,6 @@ Hope this will help!!
 </body>
 </html>
 ```
+
+Hope this will help!!
 
